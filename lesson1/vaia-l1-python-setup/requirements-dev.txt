@@ -1,0 +1,13 @@
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+
+# Linting and Formatting
+black==23.12.1
+ruff==0.1.9
+mypy==1.8.0
+
+# Development
+ipython==8.19.0
+ipdb==0.13.13
