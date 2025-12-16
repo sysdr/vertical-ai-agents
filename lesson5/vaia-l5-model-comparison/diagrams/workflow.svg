@@ -1,0 +1,132 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wgrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a7f3d0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6ee7b7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wgrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdba74;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wgrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#bfdbfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:1" />
+    </linearGradient>
+    <filter id="wshadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1f2937">
+    Benchmark Workflow
+  </text>
+  
+  <!-- Step 1: User Input -->
+  <rect x="350" y="70" width="200" height="70" rx="10" fill="url(#wgrad1)" filter="url(#wshadow)"/>
+  <text x="450" y="100" font-family="Arial, sans-serif" font-size="15" font-weight="600" text-anchor="middle" fill="#065f46">
+    User Selects
+  </text>
+  <text x="450" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#047857">
+    Models + Prompts
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 450 140 L 450 170 M 445 165 L 450 170 L 455 165" stroke="#6b7280" stroke-width="2" fill="none"/>
+  
+  <!-- Step 2: Orchestrator -->
+  <rect x="350" y="180" width="200" height="70" rx="10" fill="url(#wgrad2)" filter="url(#wshadow)"/>
+  <text x="450" y="210" font-family="Arial, sans-serif" font-size="15" font-weight="600" text-anchor="middle" fill="#7c2d12">
+    Benchmark Orchestrator
+  </text>
+  <text x="450" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#9a3412">
+    Initialize Test Suite
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 450 250 L 450 280 M 445 275 L 450 280 L 455 275" stroke="#6b7280" stroke-width="2" fill="none"/>
+  
+  <!-- Step 3: Parallel Execution -->
+  <rect x="100" y="290" width="700" height="200" rx="10" fill="#f9fafb" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="450" y="315" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1f2937">
+    Parallel Model Invocation
+  </text>
+  
+  <!-- Model 1 -->
+  <rect x="130" y="340" width="180" height="120" rx="8" fill="url(#wgrad3)" filter="url(#wshadow)"/>
+  <text x="220" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1e3a8a">
+    Gemini Flash
+  </text>
+  <text x="220" y="385" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3b82f6">
+    Start Timer
+  </text>
+  <text x="220" y="405" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3b82f6">
+    API Call
+  </text>
+  <text x="220" y="425" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3b82f6">
+    Measure Latency
+  </text>
+  <text x="220" y="445" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#10b981">
+    ✓ Result Captured
+  </text>
+  
+  <!-- Model 2 -->
+  <rect x="360" y="340" width="180" height="120" rx="8" fill="url(#wgrad3)" filter="url(#wshadow)"/>
+  <text x="450" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1e3a8a">
+    Gemini Pro
+  </text>
+  <text x="450" y="385" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3b82f6">
+    Start Timer
+  </text>
+  <text x="450" y="405" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3b82f6">
+    API Call
+  </text>
+  <text x="450" y="425" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3b82f6">
+    Measure Latency
+  </text>
+  <text x="450" y="445" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#10b981">
+    ✓ Result Captured
+  </text>
+  
+  <!-- Model 3 -->
+  <rect x="590" y="340" width="180" height="120" rx="8" fill="url(#wgrad3)" filter="url(#wshadow)"/>
+  <text x="680" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#1e3a8a">
+    Gemini Ultra
+  </text>
+  <text x="680" y="385" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3b82f6">
+    Start Timer
+  </text>
+  <text x="680" y="405" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3b82f6">
+    API Call
+  </text>
+  <text x="680" y="425" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#3b82f6">
+    Measure Latency
+  </text>
+  <text x="680" y="445" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#10b981">
+    ✓ Result Captured
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 450 490 L 450 520 M 445 515 L 450 520 L 455 515" stroke="#6b7280" stroke-width="2" fill="none"/>
+  
+  <!-- Step 4: Analytics -->
+  <rect x="350" y="530" width="200" height="70" rx="10" fill="url(#wgrad2)" filter="url(#wshadow)"/>
+  <text x="450" y="560" font-family="Arial, sans-serif" font-size="15" font-weight="600" text-anchor="middle" fill="#7c2d12">
+    Analytics Engine
+  </text>
+  <text x="450" y="580" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#9a3412">
+    Aggregate & Analyze
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 450 600 L 450 630 M 445 625 L 450 630 L 455 625" stroke="#6b7280" stroke-width="2" fill="none"/>
+  
+  <!-- Step 5: Visualization -->
+  <rect x="350" y="640" width="200" height="70" rx="10" fill="url(#wgrad1)" filter="url(#wshadow)"/>
+  <text x="450" y="670" font-family="Arial, sans-serif" font-size="15" font-weight="600" text-anchor="middle" fill="#065f46">
+    Dashboard Display
+  </text>
+  <text x="450" y="690" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#047857">
+    Charts & Metrics
+  </text>
+</svg>
