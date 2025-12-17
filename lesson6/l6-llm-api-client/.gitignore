@@ -1,0 +1,50 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Test caches
+.pytest_cache/
+
+# Logs and artifacts
+start.log
+build.log
+*.log
+logs/
+
+# Env files
+.env
+
+# Build outputs
+frontend/build/
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Test caches
+.pytest_cache/
+
+# Logs and artifacts
+start.log
+build.log
+*.log
+logs/
+
+# Env files
+.env
+
+# Build outputs
+frontend/build/

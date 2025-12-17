@@ -1,0 +1,280 @@
+nohup: ignoring input
+Starting L6: LLM API Client...
+[1/2] Starting FastAPI backend...
+INFO:     Will watch for changes in these directories: ['/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [12600] using WatchFiles
+{"rpm_capacity": 60, "tpm_capacity": 100000, "event": "rate_limiter_initialized", "timestamp": "2025-12-17T07:37:16.221092Z"}
+{"failure_threshold": 5, "timeout": 60, "event": "circuit_breaker_initialized", "timestamp": "2025-12-17T07:37:16.221371Z"}
+{"input_cost": 0.075, "output_cost": 0.3, "event": "cost_tracker_initialized", "timestamp": "2025-12-17T07:37:16.221473Z"}
+{"model": "gemini-1.5-flash", "use_mock": true, "event": "gemini_client_initialized", "timestamp": "2025-12-17T07:37:16.221535Z"}
+INFO:     Started server process [12663]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[2/2] Starting React frontend...
+
+✅ Application started!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 Frontend: http://localhost:3000
+🔧 Backend API: http://localhost:8000
+📚 API Docs: http://localhost:8000/docs
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Press Ctrl+C to stop all services
+
+> l6-llm-api-client-ui@1.0.0 start
+> react-scripts start
+
+Attempting to bind to HOST environment variable: 0.0.0.0
+If this was unintentional, check that you haven't mistakenly set it in your shell.
+Learn more here: https://cra.link/advanced-config
+
+Something is already running on port 3000.
+INFO:     127.0.0.1:59254 - "GET /api/stats HTTP/1.1" 200 OK
+{"request_id": "d9a41000", "prompt_length": 22, "use_mock": true, "event": "request_started", "timestamp": "2025-12-17T07:37:41.115149Z"}
+{"rpm_remaining": 59, "tpm_remaining": 99995, "event": "rate_limit_acquired", "timestamp": "2025-12-17T07:37:41.115451Z"}
+{"output_tokens": 47, "input_tokens": 16, "event": "mock_response_generated", "timestamp": "2025-12-17T07:37:41.182280Z"}
+{"input_tokens": 16, "output_tokens": 47, "cost_usd": 1.5e-05, "event": "usage_recorded", "timestamp": "2025-12-17T07:37:41.182544Z"}
+{"request_id": "d9a41000", "latency_ms": 67, "cost_usd": 1.5e-05, "use_mock": true, "event": "request_completed", "timestamp": "2025-12-17T07:37:41.182667Z"}
+INFO:     127.0.0.1:55582 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42722 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59264 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44694 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44706 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38514 - "GFailed to compile.
+
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+ERROR in ./src/App.js 7:0-19
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+webpack compiled with 1 error
+Failed to compile.
+
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+ERROR in ./src/App.js 7:0-19
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+webpack compiled with 1 error
+Failed to compile.
+
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+ERROR in ./src/App.js 7:0-19
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+webpack compiled with 1 error
+Failed to compile.
+
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+LOG from webpack.FileSystemInfo
+<w> Managed item /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/react-refresh isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
++ 8 hidden lines
+
+ERROR in ./src/App.js 7:0-19
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in ./node_modules/react-refresh/runtime.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Cannot find module 'p-limit'
+Require stack:
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/p-locate/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/locate-path/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/find-up/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/pkg-dir/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/find-cache-dir/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/babel-loader/lib/cache.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/babel-loader/lib/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/loader-runner/lib/loadLoader.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/loader-runner/lib/LoaderRunner.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModule.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack-manifest-plugin/dist/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/react-scripts/config/webpack.config.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/react-scripts/scripts/start.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+    at Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/p-locate/index.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+
+webpack compiled with 2 errors
+Failed to compile.
+
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+LOG from webpack.FileSystemInfo
+<w> Managed item /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack-dev-server isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
++ 12 hidden lines
+
+ERROR in ./src/App.js 7:0-19
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in ./node_modules/react-refresh/runtime.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Cannot find module 'p-limit'
+Require stack:
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/p-locate/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/locate-path/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/find-up/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/pkg-dir/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/find-cache-dir/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/babel-loader/lib/cache.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/babel-loader/lib/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/loader-runner/lib/loadLoader.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/loader-runner/lib/LoaderRunner.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModule.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack-manifest-plugin/dist/index.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/react-scripts/config/webpack.config.js
+- /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/react-scripts/scripts/start.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+    at Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/p-locate/index.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=none&overlay=%7B%22errors%22%3Atrue%2C%22warnings%22%3Afalse%7D&reconnect=10&hot=true&live-reload=true' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+webpack compiled with 3 errors
+Failed to compile.
+
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+LOG from webpack.FileSystemInfo
+<w> Managed item /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/react-dom isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
++ 8 hidden lines
+
+ERROR in ./src/App.js 7:0-19
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/postcss-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in ./node_modules/react-dom/client.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: ENOENT: no such file or directory, open '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/find-cache-dir/index.js'
+    at Object.readFileSync (node:fs:449:20)
+    at loadSource (node:internal/modules/cjs/loader:1548:17)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1617:44)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/babel-loader/lib/cache.js:19:22)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+
+ERROR in ./node_modules/react-refresh/runtime.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: ENOENT: no such file or directory, open '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/find-cache-dir/index.js'
+    at Object.readFileSync (node:fs:449:20)
+    at loadSource (node:internal/modules/cjs/loader:1548:17)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1617:44)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/babel-loader/lib/cache.js:19:22)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=none&overlay=%7B%22errors%22%3Atrue%2C%22warnings%22%3Afalse%7D&reconnect=10&hot=true&live-reload=true' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+webpack compiled with 4 errors
+Failed to compile.
+
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/source-map-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+ERROR in main
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/source-map-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/source-map-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/source-map-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=none&overlay=%7B%22errors%22%3Atrue%2C%22warnings%22%3Afalse%7D&reconnect=10&hot=true&live-reload=true' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Error: Child compilation failed:
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/html-webpack-plugin/lib/loader.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+ModuleNotFoundError: Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/html-webpack-plugin/lib/loader.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/Compilation.js:2065:28
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:1028:13
+    at eval (eval at create (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:10:1)
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:429:22
+    at eval (eval at create (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:614:22
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:180:10
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:846:23
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:1338:5
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/neo-async/async.js:2830:7
+
+1 ERROR in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
+webpack compiled with 6 errors
+Failed to compile.
+
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in main
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/source-map-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/source-map-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=none&overlay=%7B%22errors%22%3Atrue%2C%22warnings%22%3Afalse%7D&reconnect=10&hot=true&live-reload=true' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Error: Child compilation failed:
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/html-webpack-plugin/lib/loader.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+ModuleNotFoundError: Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/html-webpack-plugin/lib/loader.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/Compilation.js:2065:28
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:1028:13
+    at eval (eval at create (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:10:1)
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:429:22
+    at eval (eval at create (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:614:22
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:180:10
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:846:23
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:1338:5
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/neo-async/async.js:2830:7
+
+webpack compiled with 5 errors
+Failed to compile.
+
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in main
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/source-map-loader/dist/cjs.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=none&overlay=%7B%22errors%22%3Atrue%2C%22warnings%22%3Afalse%7D&reconnect=10&hot=true&live-reload=true' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/hot/dev-server.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+
+ERROR in Error: Child compilation failed:
+Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/html-webpack-plugin/lib/loader.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+ModuleNotFoundError: Module not found: Error: Can't resolve '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/html-webpack-plugin/lib/loader.js' in '/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend'
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/Compilation.js:2065:28
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:1028:13
+    at eval (eval at create (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:10:1)
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:429:22
+    at eval (eval at create (/home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:614:22
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:180:10
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:846:23
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/webpack/lib/NormalModuleFactory.js:1338:5
+    at /home/systemdrllp5/git/vertical-ai-agents/lesson6/l6-llm-api-client/frontend/node_modules/neo-async/async.js:2830:7
+
+webpack compiled with 5 errors
