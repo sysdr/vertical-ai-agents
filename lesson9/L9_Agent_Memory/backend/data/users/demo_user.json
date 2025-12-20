@@ -1,0 +1,79 @@
+[
+  {
+    "timestamp": "2025-12-20T05:14:43.996998",
+    "fact": {
+      "preference": "Python",
+      "skill_level": "intermediate"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T05:14:44.007719",
+    "fact": {
+      "preference": "FastAPI",
+      "framework": "web"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T05:15:15.958826",
+    "fact": {
+      "skill": "Python",
+      "level": "advanced"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T05:15:15.972184",
+    "fact": {
+      "skill": "JavaScript",
+      "level": "intermediate"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T05:15:15.984540",
+    "fact": {
+      "preference": "React",
+      "type": "framework"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T05:18:46.589079",
+    "fact": {
+      "skill": "Python",
+      "level": "advanced"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T05:18:46.599651",
+    "fact": {
+      "skill": "JavaScript",
+      "level": "intermediate"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T05:18:46.608562",
+    "fact": {
+      "preference": "React",
+      "type": "framework"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T06:08:40.551575",
+    "fact": {
+      "skill": "Python",
+      "level": "advanced"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T06:08:40.561675",
+    "fact": {
+      "skill": "JavaScript",
+      "level": "intermediate"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T06:08:40.570968",
+    "fact": {
+      "preference": "React",
+      "type": "framework"
+    }
+  }
+]

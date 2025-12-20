@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2025-12-20T06:52:42.395891",
+    "fact": {
+      "content": "likes AI",
+      "type": "user_preference"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T07:02:13.375387",
+    "fact": {
+      "content": "User prefers step by step explanation",
+      "type": "user_preference"
+    }
+  }
+]

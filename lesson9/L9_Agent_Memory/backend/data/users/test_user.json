@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2025-12-20T05:14:13.076998",
+    "fact": {
+      "preference": "pizza",
+      "type": "food"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T06:08:24.872030",
+    "fact": {
+      "preference": "pizza",
+      "type": "food"
+    }
+  }
+]
