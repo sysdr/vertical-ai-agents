@@ -1,0 +1,243 @@
+.dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+/* State Card */
+.state-display {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.state-badge {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.state-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.state-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.state-item .label {
+  font-weight: 600;
+  color: #7f8c8d;
+}
+
+.state-item .value {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Input Card */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.goal-input,
+.message-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.goal-input:focus,
+.message-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.send-button {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.send-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.send-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responses */
+.responses-list,
+.decisions-list {
+  max-height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.response-item,
+.decision-item {
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.response-header,
+.decision-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timestamp {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.goal-badge,
+.attempt-badge {
+  background: #3498db;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.response-message,
+.response-action,
+.response-reasoning,
+.decision-action {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.response-message strong,
+.response-action strong,
+.response-reasoning strong {
+  color: #2c3e50;
+}
+
+.response-progress {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #27ae60 0%, #2ecc71 100%);
+  transition: width 0.3s ease;
+}
+
+.decision-states {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.state-chip {
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #95a5a6;
+  font-style: italic;
+}
+
+/* Scrollbar */
+.responses-list::-webkit-scrollbar,
+.decisions-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.responses-list::-webkit-scrollbar-track,
+.decisions-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.responses-list::-webkit-scrollbar-thumb,
+.decisions-list::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 4px;
+}
