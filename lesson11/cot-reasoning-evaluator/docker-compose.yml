@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - GEMINI_API_KEY=AIzaSyDGswqDT4wQw_bd4WZtIgYAawRDZ0Gisn8
+    restart: unless-stopped
+
+  frontend:
+    image: node:18-alpine
+    working_dir: /app
+    command: sh -c "npm install && npm start"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    restart: unless-stopped

@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm
+.eslintcache
+.node_repl_history
+
+# React
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Data files (if sensitive)
+data/*.json
+!data/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# Docker
+.dockerignore
+
+# OS
+Thumbs.db
+.DS_Store
+
