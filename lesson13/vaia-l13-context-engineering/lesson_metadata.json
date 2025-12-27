@@ -1,0 +1,39 @@
+{
+  "lesson_number": 13,
+  "module": 2,
+  "module_name": "Core Agent Foundations",
+  "lesson_title": "Introduction to Context Engineering",
+  "previous_lesson": {
+    "number": 12,
+    "title": "Prompt Engineering Mastery: Few-Shot",
+    "components_available": [
+      "few_shot_classifier",
+      "prompt_templates",
+      "example_management"
+    ]
+  },
+  "next_lesson": {
+    "number": 14,
+    "title": "State Management for Agents",
+    "prerequisites_provided": [
+      "token_counter",
+      "context_optimizer",
+      "compression_strategies"
+    ]
+  },
+  "difficulty": "Intermediate",
+  "estimated_time": "3 hours",
+  "skills_gained": [
+    "Token counting and analysis",
+    "Multi-strategy text summarization",
+    "Context window optimization",
+    "Cost-aware LLM usage",
+    "Production context management"
+  ],
+  "vaia_components_built": [
+    "TokenCounter",
+    "SummarizerService",
+    "ContextOptimizer",
+    "React Dashboard"
+  ]
+}
