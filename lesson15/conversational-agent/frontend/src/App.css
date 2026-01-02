@@ -1,0 +1,133 @@
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App-header {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  color: #667eea;
+  font-size: 28px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.setup-panel {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.setup-panel h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.setup-panel input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.setup-panel button {
+  padding: 12px 30px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.setup-panel button:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.setup-panel button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.stats-panel {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.stat .label {
+  font-weight: 600;
+  color: #666;
+}
+
+.stat .value {
+  font-weight: 700;
+  color: #667eea;
+  font-size: 18px;
+}
+
+.input-panel {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 10px;
+}
+
+.input-panel input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.input-panel button {
+  padding: 12px 30px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-panel button:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.input-panel button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
