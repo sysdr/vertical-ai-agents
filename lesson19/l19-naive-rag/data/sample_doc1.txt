@@ -1,0 +1,11 @@
+Introduction to Retrieval Augmented Generation (RAG)
+
+RAG is a powerful technique that combines information retrieval with large language model generation. The system works by first retrieving relevant documents or passages from a knowledge base, then using those retrieved contexts to generate more accurate and grounded responses.
+
+The key components of a RAG system include:
+1. Document ingestion and chunking
+2. Knowledge base storage (in-memory or vector database)
+3. Retrieval mechanism (keyword-based or semantic search)
+4. LLM integration for response generation
+
+Naïve RAG uses simple keyword matching for retrieval, which works well for small to medium-sized knowledge bases. However, as the knowledge base grows, more sophisticated approaches like vector embeddings become necessary for maintaining retrieval quality.

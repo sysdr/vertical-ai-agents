@@ -1,0 +1,13 @@
+Document Chunking Strategies
+
+Effective chunking is critical for RAG system performance. The main strategies include:
+
+Character-based chunking: Split text into fixed-size chunks with overlap. Simple and predictable, but may break semantic units.
+
+Sentence-based chunking: Keep sentence boundaries intact. Better semantic preservation but variable chunk sizes.
+
+Paragraph-based chunking: Use natural paragraph breaks. Good for structured documents.
+
+The overlap parameter is crucial - typically 10-20% overlap prevents losing context at chunk boundaries. For example, with 500-character chunks, use 50-100 character overlap.
+
+Chunk size affects both retrieval precision and generation quality. Smaller chunks improve retrieval precision but may lack context. Larger chunks provide more context but reduce retrieval specificity.
