@@ -1,0 +1,95 @@
+<svg viewBox="0 0 1000 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="state1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8eaf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c5cae9;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow3">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#283593">
+    L23: Search State Machine
+  </text>
+  
+  <!-- State 1: IDLE -->
+  <rect x="350" y="80" width="300" height="80" rx="15" fill="#b3e5fc" stroke="#0277bd" stroke-width="3" filter="url(#shadow3)"/>
+  <text x="500" y="110" font-size="16" font-weight="bold" text-anchor="middle" fill="#01579b">IDLE</text>
+  <text x="500" y="135" font-size="12" text-anchor="middle" fill="#0277bd">Waiting for query</text>
+  
+  <!-- State 2: PROCESSING_QUERY -->
+  <rect x="350" y="210" width="300" height="80" rx="15" fill="url(#state1)" stroke="#3949ab" stroke-width="3" filter="url(#shadow3)"/>
+  <text x="500" y="240" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a237e">PROCESSING_QUERY</text>
+  <text x="500" y="260" font-size="11" text-anchor="middle" fill="#283593">Parse query + filters</text>
+  <text x="500" y="275" font-size="11" text-anchor="middle" fill="#283593">Generate embedding</text>
+  
+  <!-- State 3: PARALLEL_SEARCH -->
+  <rect x="50" y="340" width="300" height="100" rx="15" fill="#c8e6c9" stroke="#388e3c" stroke-width="3" filter="url(#shadow3)"/>
+  <text x="200" y="375" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">VECTOR_SEARCH</text>
+  <text x="200" y="395" font-size="11" text-anchor="middle" fill="#2e7d32">Query ChromaDB</text>
+  <text x="200" y="410" font-size="11" text-anchor="middle" fill="#2e7d32">with embedding</text>
+  <text x="200" y="425" font-size="11" text-anchor="middle" fill="#2e7d32">→ Semantic results</text>
+  
+  <rect x="650" y="340" width="300" height="100" rx="15" fill="#fff9c4" stroke="#f57f17" stroke-width="3" filter="url(#shadow3)"/>
+  <text x="800" y="375" font-size="16" font-weight="bold" text-anchor="middle" fill="#f57f00">KEYWORD_SEARCH</text>
+  <text x="800" y="395" font-size="11" text-anchor="middle" fill="#f57f00">Query ChromaDB</text>
+  <text x="800" y="410" font-size="11" text-anchor="middle" fill="#f57f00">with text query</text>
+  <text x="800" y="425" font-size="11" text-anchor="middle" fill="#f57f00">→ Lexical results</text>
+  
+  <!-- State 4: FUSING -->
+  <rect x="350" y="490" width="300" height="80" rx="15" fill="#e1bee7" stroke="#7b1fa2" stroke-width="3" filter="url(#shadow3)"/>
+  <text x="500" y="520" font-size="16" font-weight="bold" text-anchor="middle" fill="#4a148c">FUSING_RESULTS</text>
+  <text x="500" y="540" font-size="11" text-anchor="middle" fill="#6a1b9a">Apply RRF algorithm</text>
+  <text x="500" y="555" font-size="11" text-anchor="middle" fill="#6a1b9a">Merge rankings</text>
+  
+  <!-- State 5: RERANKING -->
+  <rect x="350" y="620" width="300" height="80" rx="15" fill="#ffccbc" stroke="#d84315" stroke-width="3" filter="url(#shadow3)"/>
+  <text x="500" y="650" font-size="16" font-weight="bold" text-anchor="middle" fill="#bf360c">RERANKING</text>
+  <text x="500" y="670" font-size="11" text-anchor="middle" fill="#d84315">Cross-encoder scoring</text>
+  <text x="500" y="685" font-size="11" text-anchor="middle" fill="#d84315">Final ordering</text>
+  
+  <!-- State 6: COMPLETE -->
+  <rect x="350" y="750" width="300" height="80" rx="15" fill="#c5e1a5" stroke="#558b2f" stroke-width="3" filter="url(#shadow3)"/>
+  <text x="500" y="780" font-size="16" font-weight="bold" text-anchor="middle" fill="#33691e">COMPLETE</text>
+  <text x="500" y="805" font-size="12" text-anchor="middle" fill="#558b2f">Return results to user</text>
+  
+  <!-- Transitions -->
+  <path d="M 500 160 L 500 210" stroke="#666" stroke-width="3" marker-end="url(#arrow3)"/>
+  <text x="520" y="190" font-size="11" fill="#666">Query received</text>
+  
+  <path d="M 440 290 L 200 340" stroke="#666" stroke-width="3" marker-end="url(#arrow3)"/>
+  <text x="280" y="310" font-size="10" fill="#666">Start vector</text>
+  
+  <path d="M 560 290 L 800 340" stroke="#666" stroke-width="3" marker-end="url(#arrow3)"/>
+  <text x="680" y="310" font-size="10" fill="#666">Start keyword</text>
+  
+  <path d="M 200 440 L 440 490" stroke="#666" stroke-width="3" marker-end="url(#arrow3)"/>
+  <path d="M 800 440 L 560 490" stroke="#666" stroke-width="3" marker-end="url(#arrow3)"/>
+  <text x="500" y="470" font-size="10" fill="#666">Both complete</text>
+  
+  <path d="M 500 570 L 500 620" stroke="#666" stroke-width="3" marker-end="url(#arrow3)"/>
+  <text x="520" y="600" font-size="11" fill="#666">Fusion done</text>
+  
+  <path d="M 500 700 L 500 750" stroke="#666" stroke-width="3" marker-end="url(#arrow3)"/>
+  <text x="520" y="730" font-size="11" fill="#666">Reranking done</text>
+  
+  <!-- Loop back to IDLE -->
+  <path d="M 650 790 Q 750 790, 750 120 Q 750 80, 650 120" stroke="#999" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow3)"/>
+  <text x="770" y="450" font-size="10" fill="#999">New query</text>
+  
+  <!-- Error state -->
+  <rect x="750" y="590" width="200" height="60" rx="12" fill="#ffcdd2" stroke="#c62828" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="850" y="615" font-size="14" font-weight="bold" text-anchor="middle" fill="#b71c1c">ERROR</text>
+  <text x="850" y="635" font-size="10" text-anchor="middle" fill="#c62828">Return error response</text>
+  
+  <path d="M 650 660 L 750 620" stroke="#c62828" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow3)"/>
+  <text x="690" y="640" font-size="9" fill="#c62828">On failure</text>
+  
+  <defs>
+    <marker id="arrow3" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
