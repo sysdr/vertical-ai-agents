@@ -1,0 +1,17 @@
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+python-multipart==0.0.6
+google-generativeai==0.3.2
+chromadb==0.4.22
+sentence-transformers==2.3.1
+redis==5.0.1
+langchain==0.1.4
+langchain-community==0.0.14
+tiktoken==0.5.2
+python-dotenv==1.0.0
+httpx==0.26.0
+pytest==7.4.4
+pytest-asyncio==0.23.3
+requests==2.31.0
