@@ -1,0 +1,29 @@
+{
+  "name": "default",
+  "description": "Default evaluation test suite",
+  "test_cases": [
+    {
+      "id": "tc001",
+      "type": "tool_call",
+      "query": "What's the weather in San Francisco?",
+      "expected_tool": "get_weather",
+      "expected_params": {"location": "San Francisco"}
+    },
+    {
+      "id": "tc002",
+      "type": "rag_groundedness",
+      "query": "What are the main features of Python?",
+      "ground_truth_docs": [
+        "Python is an interpreted, high-level, general-purpose programming language.",
+        "Python's design philosophy emphasizes code readability with notable use of significant indentation."
+      ]
+    },
+    {
+      "id": "tc003",
+      "type": "tool_call",
+      "query": "Search for restaurants near me",
+      "expected_tool": "search_places",
+      "expected_params": {"query": "restaurants", "nearby": true}
+    }
+  ]
+}
