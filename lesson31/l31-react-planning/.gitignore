@@ -1,0 +1,28 @@
+# L31 ReAct Planning - Git ignore
+
+# Environment and secrets
+.env
+*.env
+!.env.example
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# PIDs
+*.pid
+.backend.pid
+.frontend.pid
