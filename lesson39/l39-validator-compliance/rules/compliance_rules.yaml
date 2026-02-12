@@ -1,0 +1,121 @@
+rules:
+  # Healthcare / HIPAA Rules
+  - id: "PII_DETECTION"
+    domain: "healthcare"
+    description: "Detect personally identifiable information that violates HIPAA"
+    severity: 95
+    pattern: "(\\b\\d{3}-\\d{2}-\\d{4}\\b|\\b\\d{16}\\b|passport\\s*#?\\s*\\w+)"
+    requires_classification: false
+    action: "block"
+    version: "1.0"
+    effective_date: "2025-01-01"
+  
+  - id: "MEDICAL_DISCLAIMER_REQUIRED"
+    domain: "healthcare"
+    description: "Medical advice must include disclaimer to consult healthcare professional"
+    severity: 60
+    pattern: null
+    requires_classification: true
+    classification_prompt: |
+      Does this content provide medical advice without including a disclaimer to consult a healthcare professional?
+      Medical advice includes treatment recommendations, diagnosis information, or medication guidance.
+      Respond YES if disclaimer is missing, NO if present or not medical advice.
+    action: "warn"
+    version: "1.0"
+    effective_date: "2025-01-01"
+  
+  - id: "UNVERIFIED_MEDICAL_CLAIMS"
+    domain: "healthcare"
+    description: "Medical claims must cite peer-reviewed sources"
+    severity: 75
+    pattern: null
+    requires_classification: true
+    classification_prompt: |
+      Does this content make medical or health claims without citing sources?
+      Look for statements about treatment effectiveness, disease causation, or health outcomes.
+      Respond YES if claims lack citations, NO if sources are provided.
+    action: "block"
+    version: "1.0"
+    effective_date: "2025-01-01"
+  
+  # Financial / SEC Rules
+  - id: "FINANCIAL_ADVICE_DISCLAIMER"
+    domain: "financial"
+    description: "Financial advice requires disclaimer about not being professional advice"
+    severity: 70
+    pattern: null
+    requires_classification: true
+    classification_prompt: |
+      Does this content provide financial or investment advice without appropriate disclaimers?
+      Look for specific investment recommendations, trading suggestions, or financial planning guidance.
+      Respond YES if disclaimer missing, NO otherwise.
+    action: "warn"
+    version: "1.0"
+    effective_date: "2025-01-01"
+  
+  - id: "INSIDER_TRADING_RISK"
+    domain: "financial"
+    description: "Content must not contain material non-public information"
+    severity: 100
+    pattern: "(inside information|non-public|material information|confidential earnings)"
+    requires_classification: true
+    classification_prompt: |
+      Does this content reference or rely on material non-public information about companies?
+      This includes unreleased earnings, merger discussions, or confidential business plans.
+      Respond YES if suspected, NO otherwise.
+    action: "block"
+    version: "1.0"
+    effective_date: "2025-01-01"
+  
+  # Data Privacy / GDPR Rules
+  - id: "PERSONAL_DATA_EXPOSURE"
+    domain: "all"
+    description: "Personal data must not be exposed without consent"
+    severity: 90
+    pattern: "(email|phone.*number|address.*\\d+|date.*birth)"
+    requires_classification: false
+    action: "block"
+    version: "1.0"
+    effective_date: "2025-01-01"
+  
+  - id: "GDPR_RIGHT_TO_DELETION"
+    domain: "all"
+    description: "Content about individuals must respect right to be forgotten"
+    severity: 80
+    pattern: null
+    requires_classification: true
+    classification_prompt: |
+      Does this content include personal information about individuals that might violate 
+      GDPR right to erasure/right to be forgotten?
+      Respond YES if contains detailed personal history or private information, NO otherwise.
+    action: "warn"
+    version: "1.0"
+    effective_date: "2025-01-01"
+  
+  # General Content Safety
+  - id: "HARMFUL_CONTENT"
+    domain: "all"
+    description: "Content must not promote harm, violence, or illegal activities"
+    severity: 100
+    pattern: "(how to make.*weapon|suicide.*method|illegal.*drug.*manufacture)"
+    requires_classification: true
+    classification_prompt: |
+      Does this content promote harm, violence, self-harm, or illegal activities?
+      Respond YES if harmful, NO if discussing topics academically or for safety awareness.
+    action: "block"
+    version: "1.0"
+    effective_date: "2025-01-01"
+  
+  - id: "MISINFORMATION_RISK"
+    domain: "all"
+    description: "Content must not spread demonstrably false information"
+    severity: 65
+    pattern: null
+    requires_classification: true
+    classification_prompt: |
+      Does this content make claims that are demonstrably false or misleading?
+      Consider scientific consensus, fact-checked information, and established facts.
+      Respond YES if misinformation detected, NO otherwise.
+    action: "warn"
+    version: "1.0"
+    effective_date: "2025-01-01"
