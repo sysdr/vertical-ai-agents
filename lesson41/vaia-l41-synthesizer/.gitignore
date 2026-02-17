@@ -1,0 +1,53 @@
+# Environment and secrets (never commit API keys)
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and data
+logs/
+*.log
+data/
+
+# Docker
+.docker/
+
+# Istio (if present)
+istio-*/
+*istio*.yaml
+*istio*.yml
+
+# Build outputs
+frontend/build/
+*.egg
