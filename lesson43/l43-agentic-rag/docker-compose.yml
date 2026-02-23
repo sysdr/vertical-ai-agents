@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports: ["8043:8043"]
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    volumes:
+      - ./backend/data:/app/backend/data
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports: ["3043:3043"]
+    depends_on: [backend]

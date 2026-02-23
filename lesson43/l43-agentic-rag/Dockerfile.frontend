@@ -1,0 +1,12 @@
+FROM node:20-alpine AS builder
+WORKDIR /app
+COPY frontend/package.json .
+RUN npm install --silent
+COPY frontend/ .
+ENV REACT_APP_API_URL=http://localhost:8043
+RUN npm run build
+
+FROM nginx:alpine
+COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 3043
+CMD ["nginx", "-g", "daemon off;"]
