@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8044:8044"
+    environment:
+      - GEMINI_API_KEY=AIzaSyDGswqDT4wQw_bd4WZtIgYAawRDZ0Gisn8
+      - REPORTS_DIR=/app/data/reports
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8044/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  frontend:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3044:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8044
+    command: sh -c "npm install && npm start"
+    depends_on:
+      - backend
