@@ -1,0 +1,6 @@
+# Lesson49 prerequisites
+# Runtime package dependencies for this app are created by ../setup.sh
+python 3.11+
+node 18+
+docker (optional but recommended)
+bash
