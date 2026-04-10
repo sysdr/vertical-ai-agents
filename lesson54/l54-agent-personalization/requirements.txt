@@ -1,0 +1,4 @@
+# Lesson 54 root requirements shim.
+# Install backend dependencies with:
+#   pip install -r l54-agent-personalization/backend/requirements.txt
+

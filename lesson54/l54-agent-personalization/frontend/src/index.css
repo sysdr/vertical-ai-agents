@@ -1,0 +1,22 @@
+:root {
+  --bg: #0e0f14;
+  --surface: #161720;
+  --surface2: #1e2030;
+  --border: #2a2d3e;
+  --accent: #6ee7b7;
+  --accent2: #f59e0b;
+  --accent3: #818cf8;
+  --text: #e2e8f0;
+  --text-muted: #64748b;
+  --executive: #f59e0b;
+  --practitioner: #6ee7b7;
+  --learner: #818cf8;
+  --analyst: #fb7185;
+  --font-mono: 'DM Mono', monospace;
+  --font-display: 'Syne', sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: var(--font-mono); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
