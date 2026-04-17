@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: vaia-prod
+  labels:
+    name: vaia-prod
+    managed-by: l64-cd

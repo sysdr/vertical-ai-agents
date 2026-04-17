@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vaia-agent-config
+  namespace: vaia-prod
+data:
+  CHROMA_HOST: "chromadb-service"
+  CHROMA_PORT: "8000"
+  REDIS_URL: "redis://redis-service:6379/0"
+  LOG_LEVEL: "INFO"
+  ENVIRONMENT: "production"
+  GEMINI_MODEL: "models/gemini-2.0-flash-lite"
