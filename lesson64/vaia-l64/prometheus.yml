@@ -1,8 +1,0 @@
-global:
-  scrape_interval: 15s
-
-scrape_configs:
-  - job_name: vaia-agent
-    static_configs:
-      - targets: ["agent:8000"]
-    metrics_path: /metrics

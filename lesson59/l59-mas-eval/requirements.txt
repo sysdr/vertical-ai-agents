@@ -1,2 +1,0 @@
-# Lesson 59 requirements entrypoint
--r backend/requirements.txt

@@ -1,6 +1,0 @@
-{
-  "max_iterations": 20,
-  "max_tokens_per_turn": 100000,
-  "enforcement_mode": "warn",
-  "description": "Production-like constraints for realistic testing"
-}
