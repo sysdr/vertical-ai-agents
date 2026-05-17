@@ -1,3 +1,9 @@
+## Note :
+> Lessons are moved to private repo : https://github.com/sysdr/vertical-ai-agent-p.git
+> 
+> Upgrade to access lessons - https://aiamastery.substack.com/subscribe
+----------------
+
 # Advanced Architectures for Vertical AI Agents
 
 > **Note:** This is not a general course on LLMs. This is a 90-lesson, deep-dive curriculum engineered to train the next generation of AI Solution Architects and Engineers, ensuring you can move from simple prototype to production-ready, auditable, and secure VAIA deployment.
