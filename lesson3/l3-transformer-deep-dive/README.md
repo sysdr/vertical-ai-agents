@@ -12,7 +12,7 @@ docker-compose up
 ### Without Docker
 ```bash
 ./scripts/build.sh
-./scripts/start.sh
+./start.sh
 ```
 
 ## Access Points

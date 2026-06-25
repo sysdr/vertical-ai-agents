@@ -47,9 +47,9 @@ lerna-debug.log*
 .env.production.local
 
 # React / Frontend Build
-frontend/build/
-frontend/.pnp
-frontend/.pnp.js
+**/frontend/build/
+**/frontend/.pnp
+**/frontend/.pnp.js
 
 # Testing
 .pytest_cache/
@@ -76,6 +76,7 @@ htmlcov/
 
 # Docker
 *.log
+docker-compose.override.yml
 
 # OS
 .DS_Store
@@ -105,4 +106,3 @@ diagrams/*.png
 diagrams/*.jpg
 diagrams/*.svg
 !diagrams/.gitkeep
-

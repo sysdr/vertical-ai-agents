@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
+
 echo "Stopping L3 Transformer Visualizer..."
 
 if command -v docker-compose &> /dev/null; then
