@@ -1,62 +1,47 @@
-## Note :
-> Lessons are moved to private repo : https://github.com/sysdr/vertical-ai-agent-p.git
-> 
-> Upgrade to access lessons - https://aiamastery.substack.com/subscribe
-----------------
-
 # Advanced Architectures for Vertical AI Agents
 
-> **Note:** This is not a general course on LLMs. This is a 90-lesson, deep-dive curriculum engineered to train the next generation of AI Solution Architects and Engineers, ensuring you can move from simple prototype to production-ready, auditable, and secure VAIA deployment.
+**3 full lessons from this course are free to read — no signup, no card.** This repository holds the working code for those lessons.
 
-Access the lessons here : https://aiamastery.substack.com/ 
+[![Free lessons](https://img.shields.io/badge/free_lessons-3-16703E?style=flat-square)](https://systemdrd.com/courses/for-ai-agents-advanced-architectures/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) [![Course](https://img.shields.io/badge/full_course-11_lessons-D92B21?style=flat-square)](https://systemdrd.com/courses/for-ai-agents-advanced-architectures/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) [![Topic](https://img.shields.io/badge/AI_Machine_Learning-informational?style=flat-square)](https://systemdrd.com/courses/for-ai-agents-advanced-architectures/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents)
 
-## Code-First, Production-Ready: The Daily Workflow
-The era of theoretical AI training is over. This masterclass is designed as a fully immersive, **code-first experience**. Each of the 90 lessons blends conceptual deep dives with hands-on examples, practical labs, and live coding exercises.
+## Start with the free lessons
 
-You won’t just learn about the frameworks; you will install them, configure them, and build working systems in Python, mastering the technical nuances that separate proof-of-concept from robust enterprise deployment.
+Each lesson is the same one a paying subscriber reads — the full text, not a preview. The code for it is in this repository.
 
-You will master the art of translating architectural diagrams directly into modular, performant code, including the crucial tasks of:
+| | Read the lesson |
+|---|---|
+| **Lesson 1** | [Python Setup for AI](https://systemdrd.com/lessons/python-setup-for-ai/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) |
+| **Lesson 2** | [Advanced Python & Libraries ](https://systemdrd.com/lessons/advanced-python-libraries-2/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) |
+| **Lesson 3** | [Transformer Architecture Deep Dive](https://systemdrd.com/lessons/transformer-architecture-deep-dive/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) |
 
-* **Building minimal agent loops** without external frameworks.
-* **Defining and validating Tool Calling schemas** using Python.
-* **Implementing shared memory systems** with frameworks like LangChain.
-* **Deploying and managing MLOps pipelines** using Docker and cloud services.
+## The rest of the course — 11 lessons
 
----
+<details><summary>Full curriculum (11 lessons)</summary>
 
-## What You Will Master: Production-Grade Agentic Systems
-This 90-lesson course is meticulously structured across six modules, equipping you with the tools and techniques needed to deploy autonomous systems leveraging the latest models and frameworks (GPT-5, Llama 3.1, AutoGen, LangChain/LangGraph).
+- Trial Lesson : Python Setup for AI — **free, above**
+- Trial Lesson : Advanced Python & Libraries — **free, above**
+- Trial Lesson : Transformer Architecture Deep Dive — **free, above**
+- Lesson 1: Python & LLM Fundamentals
+- Lesson 2: Model Landscape & Prompting Basics
+- Lesson 3: Memory, State & Simple Agents
+- Lesson 4: Context & Project 1
+- Lesson 5: Tool Use & Execution
+- Lesson 6: Vector Databases & Retrieval
+- Lesson 7: Modular RAG & Evaluation
+- Lesson 8: Project 2
 
-### 1. The Core Engine: Advanced Planning and Reasoning (ReAct)
-Go beyond simple, reactive code. You will learn to construct the true cognitive loop of an autonomous agent: **Perception, Reasoning, Decision-Making, and Tool Use**.
+</details>
 
-You will code the internal mechanisms of agent autonomy. We deep dive into the **ReAct (Reasoning and Acting)** framework and modern evolutions (like Reflexion) to build agents capable of multi-step planning and autonomous self-correction in dynamic environments.
+## Get the whole course
 
-### 2. Traceability Mandate: Mastering Agentic RAG
-In high-stakes domains like Legal and Finance, simple, “naïve RAG” is insufficient because it lacks verifiable grounding. You will master **Agentic RAG**, the indispensable architecture for enterprise knowledge systems.
+**$299 one-off.** No subscription.
 
-This module focuses on actively coding the component-specific agents—the **Planner Agent** and **Validator Agent**—to dynamically reformulate queries, check factual consistency, mitigate hallucination risk, and ensure every response is traceable and auditable before final synthesis.
+- All 11 lessons, written to the same depth as the 3 free ones above
+- The complete source repository, one commit per lesson
+- Every later lesson builds on the code in this repo, so nothing is thrown away
 
-### 3. Scaling Complexity: Multi-Agent Coordination (MAS)
-Real-world enterprise problems are too complex for a single agent. Learn to architect and coordinate Multi-Agent Systems (MAS) using state-of-the-art frameworks like **Microsoft AutoGen** and **CrewAI**.
-
-This module focuses on vital production strategies like:
-* Implementing hierarchical goal decomposition in code.
-* Using consensus voting for critical decisions.
-* Implementing resource guardrails to prevent costly, runaway loops.
-
-### 4. Enterprise Readiness: MLOps, Governance, and Compliance
-The critical difference between an experiment and a successful product lies in operational stability. You will implement full MLOps pipelines (CI/CD/CT/CM) built specifically for agents, focusing on:
-
-* **Continuous Training (CT):** Automating retraining pipelines to counter data and concept drift, keeping agents relevant in dynamic markets.
-* **Compliance by Design:** Embedding security measures (like end-to-end encryption) and compliance features from inception (”Privacy by Design”).
-* **Explainable AI (XAI):** Designing audit trails that capture the agent’s decision-making process to satisfy regulatory mandates like the Right to Explanation.
+### [Read the free lessons first →](https://systemdrd.com/courses/for-ai-agents-advanced-architectures/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents)
 
 ---
 
-## Full-Scale Projects
-Theory is only half the battle. This curriculum integrates five major project milestones, culminating in a **Capstone Project** where you will build and defend a fully production-grade Vertical AI Agent Based System—ready to be shown to the most discerning engineering teams and compliance officers.
-
-Stop building general-purpose demos. Start building the autonomous, vertical systems that organizations demand in the new AI economy.
-
-**The future is agentic. Are you ready to lead it?**
+Part of [SystemDR](https://systemdrd.com/courses/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) — hands-on engineering courses where you build the system, break it, and fix it. [All courses](https://systemdrd.com/courses/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) · [Free lessons across every course](https://systemdrd.com/trial-lessons/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents)
