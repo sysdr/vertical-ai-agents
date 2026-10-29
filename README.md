@@ -1,47 +1,36 @@
 # Advanced Architectures for Vertical AI Agents
 
-**3 full lessons from this course are free to read — no signup, no card.** This repository holds the working code for those lessons.
+**A 95-lesson, code-first path from Python and LLM fundamentals to production-grade, auditable AI agents for finance, healthcare and legal.** This repository holds the working code for the first lessons. The full lessons, with architecture diagrams and walkthroughs, are published in the newsletter.
 
-[![Free lessons](https://img.shields.io/badge/free_lessons-3-16703E?style=flat-square)](https://systemdrd.com/courses/for-ai-agents-advanced-architectures/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) [![Course](https://img.shields.io/badge/full_course-11_lessons-D92B21?style=flat-square)](https://systemdrd.com/courses/for-ai-agents-advanced-architectures/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) [![Topic](https://img.shields.io/badge/AI_Machine_Learning-informational?style=flat-square)](https://systemdrd.com/courses/for-ai-agents-advanced-architectures/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents)
+> 📬 **[Subscribe free at aiamastery.substack.com](https://aiamastery.substack.com/subscribe?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents)** to get new lessons by email.
 
-## Start with the free lessons
+## Start with these lessons
 
-Each lesson is the same one a paying subscriber reads — the full text, not a preview. The code for it is in this repository.
+| | Lesson | Code |
+|---|---|---|
+| **Lesson 1** | [Python Setup for AI](https://aiamastery.substack.com/p/lesson-1-python-setup-for-ai-enterprise?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) | [`lesson1/`](lesson1) |
+| **Lesson 2** | [Advanced Python & Libraries](https://aiamastery.substack.com/p/lesson-2-advanced-python-patterns?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) | [`lesson2/`](lesson2) |
+| **Lesson 3** | [Transformer Architecture Deep Dive](https://aiamastery.substack.com/p/lesson-3-transformer-architecture?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) | [`lesson3/`](lesson3) |
+| **Lesson 4** | [Understanding LLM Parameters](https://aiamastery.substack.com/p/lesson-4-understanding-llm-parameters?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) | [`lesson4/`](lesson4) |
+| **Lesson 5** | [The Model Landscape & Selection](https://aiamastery.substack.com/p/lesson-5-the-2025-model-landscape?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) | [`lesson5/`](lesson5) |
 
-| | Read the lesson |
-|---|---|
-| **Lesson 1** | [Python Setup for AI](https://systemdrd.com/lessons/python-setup-for-ai/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) |
-| **Lesson 2** | [Advanced Python & Libraries ](https://systemdrd.com/lessons/advanced-python-libraries-2/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) |
-| **Lesson 3** | [Transformer Architecture Deep Dive](https://systemdrd.com/lessons/transformer-architecture-deep-dive/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) |
+## The full course: 95 lessons in 6 modules
 
-## The rest of the course — 11 lessons
+1. **Foundations:** Python for AI, transformers, LLM APIs, agent theory, memory, prompting, context engineering
+2. **Building Blocks:** tool use, RAG, vector databases, retrieval optimization, evaluation
+3. **Agentic Reasoning:** ReAct, self-correction, planner, retriever, validator and synthesizer agents
+4. **Multi-Agent Systems:** AutoGen, CrewAI, coordination strategies, enterprise orchestration
+5. **Enterprise MLOps:** CI/CD, serving, monitoring, guardrails, cost, canary deployments
+6. **Vertical Case Studies and Capstone:** finance, healthcare and legal agents, governance, red teaming, the VAIA capstone
 
-<details><summary>Full curriculum (11 lessons)</summary>
+**[See the full curriculum →](https://aiamastery.substack.com/p/advanced-architectures-for-vertical?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents)**
 
-- Trial Lesson : Python Setup for AI — **free, above**
-- Trial Lesson : Advanced Python & Libraries — **free, above**
-- Trial Lesson : Transformer Architecture Deep Dive — **free, above**
-- Lesson 1: Python & LLM Fundamentals
-- Lesson 2: Model Landscape & Prompting Basics
-- Lesson 3: Memory, State & Simple Agents
-- Lesson 4: Context & Project 1
-- Lesson 5: Tool Use & Execution
-- Lesson 6: Vector Databases & Retrieval
-- Lesson 7: Modular RAG & Evaluation
-- Lesson 8: Project 2
+## Get every lesson and all the code
 
-</details>
+Paid subscribers get all 95 lessons in full, the complete code for every lesson in a private repository, and the other courses in the newsletter: Hands-On AI Agent Mastery and Production AI Engineering.
 
-## Get the whole course
-
-**$299 one-off.** No subscription.
-
-- All 11 lessons, written to the same depth as the 3 free ones above
-- The complete source repository, one commit per lesson
-- Every later lesson builds on the code in this repo, so nothing is thrown away
-
-### [Read the free lessons first →](https://systemdrd.com/courses/for-ai-agents-advanced-architectures/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents)
+### [Subscribe at aiamastery.substack.com →](https://aiamastery.substack.com/subscribe?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents)
 
 ---
 
-Part of [SystemDR](https://systemdrd.com/courses/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) — hands-on engineering courses where you build the system, break it, and fix it. [All courses](https://systemdrd.com/courses/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents) · [Free lessons across every course](https://systemdrd.com/trial-lessons/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents)
+Prefer a shorter course you buy once? An 11-lesson version is available as a [$299 one-off purchase on SystemDR](https://systemdrd.com/courses/for-ai-agents-advanced-architectures/?utm_source=github&utm_medium=readme&utm_campaign=vertical-ai-agents).
